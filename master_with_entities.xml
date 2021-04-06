@@ -1,0 +1,1826 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE master SYSTEM "master.dtd"[
+		<!ENTITY dom.mail-mrs "univ-mrs.fr">
+		<!ENTITY dom.mail-amu "univ-amu.fr">
+		<!ENTITY dom.lieu-luminy "Luminy">
+		<!ENTITY dom.lieu-saint-jerome "Saint-Jérôme">
+]>
+<master>
+	<intervenants>
+		<intervenant id="Remi_MORIN">
+			<nom>Rémi MORIN</nom>
+			<adresse>
+				<mail>remi.morin@&dom.mail-amu;</mail>
+				<site_web>http://pageperso.lif.&dom.mail-mrs;/~remi.morin/</site_web>
+			</adresse>
+		</intervenant>
+		<intervenant id="Jean-Luc_MASSAT">
+			<nom>Jean-Luc MASSAT</nom>
+			<adresse>
+				<mail>jean-luc.massat@&dom.mail-amu;</mail>
+				<site_web>http://jean-luc.massat.perso.luminy.&dom.mail-amu;</site_web>
+			</adresse>
+		</intervenant>
+		<intervenant id="Magali_CONTENSIN">
+			<nom>Magali CONTENSIN</nom>
+			<adresse>
+				<mail>Magali.Contensin@&dom.mail-mrs;</mail>
+				<site_web>http://magali.contensin.free.fr/html/InternetLicPro.html</site_web>
+			</adresse>
+		</intervenant>
+		<intervenant id="Nadia_CREIGNOU">
+			<nom>Nadia CREIGNOU</nom>
+			<adresse>
+				<mail>nadia.creignou@&dom.mail-amu;</mail>
+				<site_web>http://www.lif.&dom.mail-mrs;/annuaire/personne/1155937</site_web>
+			</adresse>
+		</intervenant>
+		<intervenant id="Frederic_OLIVE">
+			<nom>Frederic OLIVE</nom>
+			<adresse>
+				<mail>frederic.olive@lif.&dom.mail-mrs;</mail>
+				<site_web>http://pageperso.lif.&dom.mail-mrs;/~frederic.olive/</site_web>
+			</adresse>
+		</intervenant>
+		<intervenant id="Pablo_ARRIGHI">
+			<nom>Pablo ARRIGHI</nom>
+			<adresse>
+				<mail>pablo.ARRIGHI@&dom.mail-amu;</mail>
+				<site_web>http://pageperso.lif.&dom.mail-mrs;/~pablo.arrighi/</site_web>
+			</adresse>
+		</intervenant>
+		<intervenant id="Kevin_PERROT">
+			<nom>Kevin PERROT</nom>
+			<adresse>
+				<mail>kevin.perrot@lif.&dom.mail-mrs;</mail>
+				<site_web>http://pageperso.lif.&dom.mail-mrs;/~kevin.perrot/</site_web>
+			</adresse>
+		</intervenant>
+		<intervenant id="Djamal_HABET">
+			<nom>Djamal HABET</nom>
+			<adresse>
+				<mail>djamal.habet@&dom.mail-amu;</mail>
+				<site_web>http://www.lsis.org/habetd/</site_web>
+			</adresse>
+		</intervenant>
+		<intervenant id="Frederic_BECHET">
+			<nom>Frederic BECHET</nom>
+			<adresse>
+				<mail>frederic.bechet@&dom.mail-amu;</mail>
+				<site_web>http://pageperso.lif.&dom.mail-mrs;/~frederic.bechet/</site_web>
+			</adresse>
+		</intervenant>
+		<intervenant id="Omar_BOUCELMA">
+			<nom>Omar BOUCELMA</nom>
+			<adresse>
+				<mail>omar.boucelma@&dom.mail-amu;</mail>
+				<site_web>https://annuaire.&dom.mail-amu;/personnel/detail/b21hci5ib3VjZWxtYQ==</site_web>
+			</adresse>
+		</intervenant>
+		<intervenant id="Nicola_OLIVETTI">
+			<nom>Nicola OLIVETTI</nom>
+			<adresse>
+				<mail>nicola.olivetti@&dom.mail-amu;</mail>
+				<site_web>http://www.lsis.org/olivetti/</site_web>
+			</adresse>
+		</intervenant>
+		<intervenant id="Pierre-Alain_REYNIER">
+			<nom>Pierre-Alain REYNIER</nom>
+			<adresse>
+				<mail>pierre-alain.reynier@&dom.mail-amu;</mail>
+				<site_web>http://pageperso.lif.&dom.mail-mrs;/~pierre-alain.reynier/</site_web>
+			</adresse>
+		</intervenant>
+		<intervenant id="Luigi_SANTOCANALE">
+			<nom>Luigi SANTOCANALE</nom>
+			<adresse>
+				<mail>luigi.santocanale@&dom.mail-amu;</mail>
+				<site_web>http://pageperso.lif.&dom.mail-mrs;/~luigi.santocanale/</site_web>
+			</adresse>
+		</intervenant>
+		<intervenant id="Lydie_RENE-CHABAROT">
+			<nom>Lydie Réné-CHABAROT</nom>
+			<adresse>
+				<mail>lydie.rene@&dom.mail-amu;</mail>
+				<site_web>http://pageperso.lif.&dom.mail-mrs;/~luigi.santocanale/</site_web>
+			</adresse>
+		</intervenant>
+		<intervenant id="Emmanuel_GODARD">
+			<nom>Emmanuel GODARD</nom>
+			<adresse>
+				<mail>emmanuel.godard@&dom.mail-amu;</mail>
+				<site_web>http://pageperso.lif.&dom.mail-mrs;/~emmanuel.godard/</site_web>
+			</adresse>
+		</intervenant>
+		<intervenant id="Noel_NOVELLI">
+			<nom>Noël Novelli</nom>
+			<adresse>
+				<mail>noel.novelli@&dom.mail-amu;</mail>
+			</adresse>
+		</intervenant>
+		<intervenant id="Thierry_ARTIERES">
+			<nom>Thierry ARTIERES</nom>
+			<adresse>
+				<site_web>thierry.artieres@lif.univ-mrs.fr</site_web>
+			</adresse>
+		</intervenant>
+	</intervenants>	
+	<parcours code="M1">
+		<nom>Première année de tronc commun</nom>
+		<lieu>&dom.lieu-luminy;</lieu>
+		<lieu>&dom.lieu-saint-jerome;</lieu>
+		<responsable ref="Remi_MORIN"/>
+		<description>
+			<texte>
+				<p>L'objectif de cette première année est de donner les bases indispensables permettant, en deuxième année, de choisir une spécialisation dans un domaine précis. Sur les 60 crédits de cette première année, 15 crédits correspondent à des enseignements optionnels. Ces options permettent de construire un parcours adapté. Un choix entre stage ou projet encadré est également proposé au semestre de printemps.</p>
+			</texte>
+		</description>
+		<semestre id="S1">	
+			<unites_obligatoires>
+				<unite id="ENSINAU1">
+					<nom>Génie Logiciel</nom>
+					<credits>6</credits>
+					<ref_intervenant ref="Pablo_ARRIGHI"/>
+					<ref_intervenant ref="Kevin_PERROT"/>
+					<resume>
+						<texte>
+							<ul>
+							    <li>Processus logiciel</li>
+							    <li>Gestion de projet</li>
+							    <li>Spécification et conception (artefact : notation UML)</li>
+							    <li>Design patterns</li>
+							</ul>
+						</texte>
+					</resume>
+					<plan>
+						 <nbrCours>20</nbrCours>
+						 <nbrTD>20</nbrTD>
+						 <nbrTP>20</nbrTP>
+					</plan>
+					<lieu>&dom.lieu-luminy;</lieu>
+				</unite>		
+				<unite id="ENSINAU2">
+					<nom>Complexité</nom>
+					<credits>6</credits>
+					<ref_intervenant ref="Nadia_CREIGNOU"/>
+					<ref_intervenant ref="Frederic_OLIVE"/>
+					<resume>
+						<texte>
+							<ul>
+							    <li>Rappels sur les notions d'analyse de la complexité des algorithmes et des problèmes.</li>
+							    <li>Notion de problèmes (décision, recherche, dénombrement, énumération, optimisation). Bornes inférieures de complexité.</li>
+							    <li>Classes P et NP. Problèmes NP-complets.</li>
+							    <li>Méthodes de résolution des problèmes NP-Complets.</li>
+							</ul>
+						</texte>
+					</resume>
+					<plan>
+						 <nbrCours>20</nbrCours>
+						 <nbrTD>20</nbrTD>
+						 <nbrTP>20</nbrTP>
+					</plan>
+					<lieu>&dom.lieu-luminy;</lieu>
+				</unite>			
+				<unite id="ENSINAU3">
+					<nom>Réseaux</nom>
+					<credits>6</credits>
+					<ref_intervenant ref="Emmanuel_GODARD"/>
+					<resume>
+						<texte>
+							<ul>
+							    <li>Architecture en couches, standard OSI</li>
+							    <li>Couche physique</li>
+							    <li>Couche liaison de Données</li>
+							    <li>Réseau IP</li>
+							    <li>Algorithmes de routage, routage IP</li>
+							    <li>Protocole TCP/IP</li>
+							    <li>Couche Application : HTTP, SMTP, FTP, ...</li>
+							    <li>Bases des protocoles cryptographiques (terminologie, architecture à clef publique).</li>
+							    <li>Introduction à la Sécurité des réseaux.</li>
+							</ul>
+						</texte>
+					</resume>
+					<plan>
+						 <nbrCours>20</nbrCours>
+						 <nbrTD>20</nbrTD>
+						 <nbrTP>20</nbrTP>
+					</plan>
+					<lieu>&dom.lieu-luminy;</lieu>
+				</unite>
+				<unite id="ENSINAU4">
+					<nom>Programmation fonctionnelle</nom>
+					<credits>3</credits>
+					<ref_intervenant ref="Luigi_SANTOCANALE"/>
+					<resume>
+						<texte>
+							<ul>
+								<li>1- Introduction à la programmation fonctionnelle, sur l'exemple du langage  OCaml Expressions, évaluation, types de base. Polymorphisme, ordre supérieur. Fonctions récursives, filtrage. Les diverses stratégies d'évaluation, application à la programmation d'un opérateur de point fixe.</li>
+							    <li>2- Les types Sommes, types récursifs, polymorphes. Arbres. Filtrage.</li>
+								<li>3- Sémantique opérationnelle Liaisons, environnements, clôtures. Évaluation des fonctions récursives .</li>
+								<li>4- Aspects impératifs Exceptions, entrées-sorties, séquencement, fichiers, références, tableaux, enregistrements.</li>
+								<li>5- Implantation du filtrage en OCaml Termes formels, substitutions, filtrage.</li>
+							</ul>
+						</texte>
+					</resume>
+					<plan>
+						 <nbrCours>20</nbrCours>
+						 <nbrTD>20</nbrTD>
+						 <nbrTP>20</nbrTP>
+					</plan>
+					<lieu>&dom.lieu-luminy;</lieu>
+				</unite>
+				<unite id="ENSINAU12">
+					<nom>BDR : approfondissement</nom>
+					<credits>3</credits>
+					<ref_intervenant ref="Remi_MORIN"/>
+					<resume>
+						<texte>
+							<p>nous sommes désolé, mais nous n'avons pas encore de resume.</p>
+						</texte>
+					</resume>
+					<plan>
+						 <nbrCours>10</nbrCours>
+						 <nbrTD>10</nbrTD>
+						 <nbrTP>10</nbrTP>
+					</plan>
+					<lieu>&dom.lieu-luminy;</lieu>
+				</unite>
+			</unites_obligatoires>
+			<unites_optionnelles credits_options="6">
+				<unite id="ENSINAU6">
+					<nom>Programmation logique</nom>
+					<credits>3</credits>
+					<ref_intervenant ref="Remi_MORIN"/>
+					<resume>
+						<texte>
+							<ul>
+								<li>Introduction. Forme générale des règles. Effacement, unification, backtracking. Contrôle de l'exécution.</li>
+								<li>Listes, arbres et n-uplets. Liste représentée par différence de listes. Ajout en tête et en queue, concaténation.</li>
+								<li>Analyseurs syntaxiques. Construction d'un arbre syntaxique. Liste des feuilles d'un arbre. Freeze et analyse par feuille.</li>
+								<li>Règles prédéfinies</li>
+							</ul>
+						</texte>
+					</resume>
+					<plan>
+						 <nbrCours>10</nbrCours>
+						 <nbrTD>10</nbrTD>
+						 <nbrTP>10</nbrTP>
+					</plan>
+					<lieu>&dom.lieu-luminy;</lieu>
+				</unite>
+				<unite id="ENSINAU7">
+					<nom>Outils de l'internet</nom>
+					<credits>3</credits>
+					<ref_intervenant ref="Magali_CONTENSIN"/>
+					<resume>
+						<texte>
+							<ul>
+							    <li>Présentation d'Internet.</li>
+							    <li>Les langages et les normes sur Internet.</li>
+							    <li>Les protocoles : HTTP, HTTP, SMTP, IMAP, POP3</li>
+							    <li>Les applications site_web.</li>
+							    <li>Sécurité.</li>
+							    <li>Les nouvelles et futures technologies.</li>
+							</ul>
+						</texte>
+					</resume>
+					<plan>
+						 <nbrCours>10</nbrCours>
+						 <nbrTD>10</nbrTD>
+						 <nbrTP>10</nbrTP>
+					</plan>
+					<lieu>&dom.lieu-luminy;</lieu>
+				</unite>
+				<unite id="ENSINAU8">
+					<nom>Système embarqué</nom>
+					<credits>3</credits>
+					<ref_intervenant ref="Remi_MORIN"/>
+					<resume/>
+					<plan>
+						 <nbrCours>10</nbrCours>
+						 <nbrTD>10</nbrTD>
+						 <nbrTP>10</nbrTP>
+					</plan>
+					<lieu>&dom.lieu-luminy;</lieu>
+				</unite>
+				<unite id="ENSINAU9">
+					<nom>Fondamentaux pour l'ingénierie des langues</nom>
+					<credits>3</credits>
+					<ref_intervenant ref="Frederic_BECHET"/>
+					<resume>
+						<texte>
+							<ul>
+							    <li>Rappel de théorie des langages</li>
+							    <li>Algorithmes d'analyse syntaxique pour grammaires ambiguës</li>
+							    <li>Transducteurs finis et leur application en TAL</li>
+							</ul>
+						</texte>
+					</resume>
+					<plan>
+						 <nbrCours>10</nbrCours>
+						 <nbrTD>10</nbrTD>
+						 <nbrTP>10</nbrTP>
+					</plan>
+					<lieu>&dom.lieu-luminy;</lieu>
+				</unite>
+				<unite id="ENSINAU10">
+					<nom>Modèles à évènements discrets</nom>
+					<credits>3</credits>
+					<ref_intervenant ref="Remi_MORIN"/>
+					<resume>
+						<texte>
+							<p>Posséder les notions de base en modélisation et analyse de systèmes dynamiques à événements discrets et particulièrement appréhender le formalisme réseau de Pétri. Étudier la conception et la spécification des systèmes réactifs à travers l'analyse du modèle à évènements discrets (concurrence, parallélisme, synchronisation).</p>
+						</texte>
+					</resume>
+					<plan>
+						 <nbrCours>20</nbrCours>
+						 <nbrTD>10</nbrTD>
+					</plan>
+					<lieu>&dom.lieu-luminy;</lieu>
+				</unite>
+				<unite id="ENSINAU13">
+					<nom>Pratique de la cryptographie</nom>
+					<credits>3</credits>
+					<ref_intervenant ref="Remi_MORIN"/>
+					<resume/>
+					<plan>
+						 <nbrCours>10</nbrCours>
+						 <nbrTD>10</nbrTD>
+						 <nbrTP>10</nbrTP>
+					</plan>
+					<lieu>&dom.lieu-luminy;</lieu>
+				</unite>
+			</unites_optionnelles>
+		</semestre>
+		<semestre id="S2">
+			<unites_obligatoires>
+				<unite id="ENSINBU1">
+					<nom>Anglais</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume>
+						<texte>
+							<p>Un enseignement destiné à confirmer l'utilisation de l'anglais dans le contexte de l'informatique ainsi que dans la pratique professionnelle.</p>
+						</texte>
+					</resume>
+					<plan>
+						 <nbrCours>10</nbrCours>
+						 <nbrTD>10</nbrTD>
+						 <nbrTP>10</nbrTP>
+					</plan>
+					<lieu>&dom.lieu-luminy;</lieu>
+				</unite>
+				<unite id="ENSINBU2">
+					<nom>Communication</nom>
+					<credits>3</credits>
+					<ref_intervenant ref="Lydie_RENE-CHABAROT"/>
+					<resume>
+						<texte>
+							<p>chapitre 1  : Théories de la communication :</p>
+							<ul>
+								<li>1.1 La théorie mathématique de l’information (Shannon, Weaver), la cybernétique (Wiener)</li>
+								<li>1.2 La théorie de Palo Alto ( Bateson, Watzlawick) et la théorie de la communication par les processus (Mucchielli)</li>
+							</ul>
+							<p>chapitre 2 : Rôle de l’interculturalité dans le travail en équipe :</p>
+							<ul>
+								<li>2.1 L’enquête interculturelle de Hofstede pour IBM</li>
+								<li>2.2 La gestuelle et le paralangage et la proxémie dans le monde (Hall)</li>
+							</ul>
+							<p>chapitre 3 : Notions de management et de travail collaboratif</p>
+							<ul>
+								<li>3.1 Le travail collaboratif vs le travail coopératif</li>
+								<li>3.2 La notion de groupes</li>
+								<li>3.3 Les compétences managériales</li>
+							</ul>
+							<b>Pré-requis :</b>
+							<p>Particulièrement utile pour un choix d’options, les échanges internationaux et la formation continue.</p>
+    					</texte>
+					</resume>
+					<plan>
+						 <nbrCours>15</nbrCours>
+						 <nbrTD>8</nbrTD>
+					</plan>
+					<lieu>&dom.lieu-luminy;</lieu>
+				</unite>
+				<unite id="ENSINBU4">
+					<nom>XML</nom>
+					<credits>3</credits>
+					<ref_intervenant ref="Jean-Luc_MASSAT"/>
+					<resume>
+						<texte>
+							<ul>
+							 	<li>XML, DTD, XSD</li>
+							 	<li>XPath, XSLT, XQuery</li>
+							</ul>
+						</texte>
+					</resume>
+					<plan>
+						 <nbrCours>10</nbrCours>
+						 <nbrTD>10</nbrTD>
+						 <nbrTP>10</nbrTP>
+					</plan>
+					<lieu>&dom.lieu-luminy;</lieu>
+				</unite>
+				<unite id="ENSINBU5">
+					<nom>Algorithmique et recherche opérationnelle</nom>
+					<credits>3</credits>
+					<ref_intervenant ref="Remi_MORIN"/>
+					<resume>
+						<texte>
+							<ul>
+							 	<li>Programmation linéaire.</li>
+							 	<li>Notions et algorithmes de flots.</li>
+							 	<li>Applications (couplage, affectation, transport, ...)</li>
+							 	<li>Programmation dynamique (sac à dos, ordonnancement, ...)</li>
+							 	<li>Algorithmes à performance garantie</li>
+							</ul>
+						</texte>
+					</resume>
+					<plan>
+						 <nbrCours>10</nbrCours>
+						 <nbrTD>10</nbrTD>
+						 <nbrTP>10</nbrTP>
+					</plan>
+					<lieu>&dom.lieu-luminy;</lieu>
+				</unite>
+				<unite id="ENSINBU15">
+					<nom>Programmation parallèle</nom>
+					<credits>3</credits>
+					<ref_intervenant ref="Remi_MORIN"/>
+					<resume/>
+					<plan>
+						 <nbrCours>10</nbrCours>
+						 <nbrTD>10</nbrTD>
+						 <nbrTP>10</nbrTP>
+					</plan>
+					<lieu>&dom.lieu-luminy;</lieu>
+				</unite>
+			</unites_obligatoires>
+			<unites_optionnelles credits_options="6">
+				<unite id="ENSINBU6">
+					<nom>Projet</nom>
+					<credits>6</credits>
+					<ref_intervenant ref="Remi_MORIN"/>
+					<resume>
+						<texte>
+							<p>Le but du projet est de mettre en oeuvre, de l'analyse à la programmation, les notions présentées en nbrCours. C'est l'occasion, pour les étudiants, d'utiliser sur un cas pratique, les éléments exposées dans les UE. Travail effectué sous la direction pédagogique d'un enseignant, et donnant lieu à la rédaction d'un mémoire et d'une soutenance orale.</p>
+						</texte>
+					</resume>
+				</unite>
+				<unite id="ENSINBU7">
+					<nom>Stage de deux mois</nom>
+					<credits>6</credits>
+					<ref_intervenant ref="Remi_MORIN"/>
+					<resume>
+						<texte>
+							<p>Le but du projet est de mettre en oeuvre, de l'analyse à la programmation, les notions présentées en nbrCours. C'est l'occasion, pour les étudiants, d'utiliser sur un cas pratique, les éléments exposées dans les UE. Travail effectué sous la direction pédagogique d'un enseignant, et donnant lieu à la rédaction d'un mémoire et d'une soutenance orale.</p>
+						</texte>
+					</resume>
+				</unite>
+			</unites_optionnelles>
+			<unites_optionnelles credits_options="9">
+				<unite id="ENSINBU8">
+					<nom>Sémantique</nom>
+					<credits>3</credits>
+					<ref_intervenant ref="Remi_MORIN"/>
+					<resume>
+						<texte>
+							<p>1-Le lambda-calcul simplement typé</p>
+							<p>Syntaxe, typage, beta et eta-conversions, équations. Modèles : interprétation des jugements de typage.</p>
+							<p>2-Extension à PCF. La règle \mu.</p>
+							<p>3-Points fixes dans les ordres partiels complets.</p>
+							<p>Le théorème de Tarski.</p>
+							<p>4-Sémantique par point fixe de PCF.</p>
+							<p>5-Cours de clôture : survol des différentes approches sémantiques.</p>
+							<p>Sémantiques opérationnelles : par transitions, naturelles, machine abstraite de Landin.</p>
+							<p>Sémantique dénotationnelles : cas fonctionnel(cf.chapitre 4) et cas d'un petit langage impératif.</p>
+						</texte>
+					</resume>
+					<plan>
+						 <nbrCours>10</nbrCours>
+						 <nbrTD>10</nbrTD>
+						 <nbrTP>10</nbrTP>
+					</plan>
+					<lieu>&dom.lieu-luminy;</lieu>
+				</unite>
+				<unite id="ENSINBU9">
+					<nom>Algorithmique distribuée</nom>
+					<credits>3</credits>
+					<ref_intervenant ref="Pierre-Alain_REYNIER"/>
+					<resume>
+						<texte>
+							<p>Un système distribué est un ensemble d’entités autonomes de calcul (ordinateurs, PDA, processeurs, processus, processus léger, ...) interconnectées et qui peuvent communiquer entre eux. Ce nbrCours est une introduction aux méthodes pour la conception d'algorithmes dans de tels systèmes. Il donne une présentation des différents types de systèmes distribués et des différents problèmes que l'on doit résoudre. Les problèmes abordés sont : l'élection, le consensus, la diffusion, l'exploration, la réplication, l'exploration et le rendez-vous avec des agent mobiles.</p>
+						</texte>
+					</resume>
+					<plan>
+						 <nbrCours>10</nbrCours>
+						 <nbrTD>10</nbrTD>
+						 <nbrTP>10</nbrTP>
+					</plan>
+					<lieu>&dom.lieu-luminy;</lieu>
+				</unite>
+				<unite id="ENSINBU10">
+					<nom>Intégration des systèmes d'information</nom>
+					<credits>3</credits>
+					<ref_intervenant ref="Omar_BOUCELMA"/>
+					<resume>
+						<texte>
+							<ul>
+							 	<li>Problématique d'intégration des SI</li>
+							 	<li>Architectures et patrons d'intégration</li>
+							 	<li>Systèmes d'Information d'entreprises</li>
+							 	<li>Systèmes d'Information sur Internet</li>
+							</ul>
+						</texte>
+					</resume>
+					<plan>
+						 <nbrCours>10</nbrCours>
+						 <nbrTD>10</nbrTD>
+						 <nbrTP>10</nbrTP>
+					</plan>
+					<lieu>dom.lieu-saint-jerome;</lieu>
+				</unite>
+				<unite id="ENSINBU11">
+					<nom>Initiation à la fouille de données et à l'optimisation des SGBD</nom>
+					<credits>3</credits>
+					<ref_intervenant ref="Noel_NOVELLI"/>
+					<resume>
+						<texte>
+							<p>Actuellement, de plus en plus de données sont conservées sans être réellement exploitées. Elles représentent pourtant une source importante d’information. La fouille de données peut-être définie comme le processus permettant d’extraire de l’information non triviale et non préalablement connue à partir des données. Dans cet enseignement, nous nous focaliserons sur l’extraction de corrélations entre les données (règle d’association, Dépendances Fonctionnelles...) et nous verrons des techniques de mesure de la qualité des données (détection et correction d’erreur).</p>
+							<p>Par ailleurs, nous passerons du côté obscur des SGBD en mettant évidence le lien existant entre les performances d'un SGBD et les choix d'implémentation des différents algorithmes utilisés (gestion de la concurrence, reprise sur panne, transaction...) ainsi que les différentes implémentations existantes des opérations de base des SGBD comme les jointures ou les tris accompagnés de leurs conditions d'utilisation.</p>
+						</texte>
+					</resume>
+					<plan>
+						 <nbrCours>10</nbrCours>
+						 <nbrTD>10</nbrTD>
+						 <nbrTP>10</nbrTP>
+					</plan>
+					<lieu>&dom.lieu-luminy;</lieu>
+				</unite>
+				<unite id="ENSINBU12">
+					<nom>Intelligence artificielle</nom>
+					<credits>3</credits>
+					<ref_intervenant ref="Remi_MORIN"/>
+					<resume>
+						<texte>
+							<ul>
+							 	<li>Introduction à l'IA</li>
+							 	<li>Problèmes d'espace d'états et d'exploration</li>
+							 	<li>Logiques pour l'IA et démonstration automatique</li>
+							 	<li>Représentation de connaissances</li>
+							 	<li>Actions, temps et planification</li>
+							 	<li>Programmation par contraintes et réseaux de contraintes</li>
+							</ul>
+						</texte>
+					</resume>
+					<plan>
+						 <nbrCours>10</nbrCours>
+						 <nbrTD>10</nbrTD>
+						 <nbrTP>10</nbrTP>
+					</plan>
+					<lieu>&dom.lieu-luminy;</lieu>
+				</unite>
+				<unite id="ENSINBU13">
+					<nom>Algorithme à performance garantie</nom>
+					<credits>3</credits>
+					<ref_intervenant ref="Remi_MORIN"/>
+					<resume>
+						<texte>
+							<ul>
+							 	<li>Algorithmes d'approximation de nature combinatoire pour les problèmes</li>
+							</ul>
+							<p>NP-complets suivants : Voyageur de Commerce, arbre de Steiner, ordonnancement de taches, clustering, p-centres, sac à dos, bin packing, couverture d'ensemble, la plus courte sur-séquence commune ;</p>
+							<ul>
+							 	<li>FPTAS et PTAS (ordonnancement de taches et sac à dos) ;</li>
+							 	<li>Algorithmes d'approximation par programmation linéaire : l'arrondi et la méthode primale-duale (MAXSAT, couverture d'ensemble, multicoupes et multiflots dans les arbres) ;</li>
+							 	<li>Algorithmes en ligne et compétitivité : la pagination et les k-serveurs.</li>
+							</ul>
+						</texte>
+					</resume>
+					<plan>
+						 <nbrCours>10</nbrCours>
+						 <nbrTD>10</nbrTD>
+						 <nbrTP>10</nbrTP>
+					</plan>
+					<lieu>&dom.lieu-luminy;</lieu>
+				</unite>
+				<unite id="ENSINBU16">
+					<nom>Introduction à l'apprentissage automatique</nom>
+					<credits>3</credits>
+					<ref_intervenant ref="Remi_MORIN"/>
+					<resume/>
+					<plan>
+						 <nbrCours>10</nbrCours>
+						 <nbrTD>10</nbrTD>
+						 <nbrTP>10</nbrTP>
+					</plan>
+					<lieu>&dom.lieu-luminy;</lieu>
+				</unite>
+			</unites_optionnelles>
+		</semestre>
+	</parcours>
+	<parcours code="SIR">
+		<nom>Systèmes d'informations répartis</nom>
+		<lieu>&dom.lieu-saint-jerome;</lieu>
+		<responsable ref="Omar_BOUCELMA"/>
+		<description>
+			<texte>
+				<p>Le programme vise la formation de spécialistes dans des métiers à forte valeur ajoutée au travers des compétences acquises dans trois domaines clés de l’informatique : les technologies avancées du Web (services web, multimédia, etc.), les nouveaux modes de développement du logiciel (Cloud, Mobile, etc.) et les processus métiers de l’entreprise.</p>
+			</texte>
+		</description>
+		<semestre id="S3">
+			<unites_obligatoires>
+				<unite id="ENSINCU60">
+					<nom>Architectures réparties - JEE</nom>
+					<credits>6</credits>
+					<ref_intervenant ref="Omar_BOUCELMA"/>
+					<resume>
+						<texte>
+							<p>Cette UE contient les concepts et outils de base pour le développement de systèmes et d'applications distribués sur le Web. Les architectures client serveur seront revisitées, et un focus particulier sera fait sur les servlets, JSP, EJB, J2EE etc.</p>
+						</texte>
+					</resume>
+					<lieu>&dom.lieu-saint-jerome;</lieu>
+				</unite>		
+				<unite id="ENSINCU64">
+					<nom>Développement d'applications mobiles</nom>
+					<credits>3</credits>
+					<ref_intervenant ref="Omar_BOUCELMA"/>					
+					<resume>
+						<texte>
+							<p>Ce nbrCours est dédié au développement d'applications sur smartphones et tablettes dans un environnement Android. L’objectif visé est le développement d’une application complète et professionnelle à l’issue de ce nbrCours.</p>
+							<p>Les éléments suivants seront étudiés :</p>
+							<ul>
+							    <li>Architecture et OS Android,</li>
+							    <li>la conception d’applications (Context, BroadcastReceiver, ContentProviders, …,</li>
+							    <li>l’interface graphique (Views, Layouts, MVC, …),</li>
+							    <li>le système de ressources et le stockage de données,</li>
+							    <li>les librairies,</li>
+							    <li>les applications connectées (Client http Android, HttpURLConnection , Google Cloud Messaging,…).</li>
+							</ul>
+						</texte>
+					</resume>
+					<lieu>&dom.lieu-saint-jerome;</lieu>
+				</unite>
+				<unite id="ENSINCU65">
+					<nom>Gestion de projet</nom>
+					<credits>3</credits>
+					<ref_intervenant ref="Omar_BOUCELMA"/>
+					<resume>
+						<texte>
+							<p>Cette UE vise à inculquer un mode de fonctionnement projet. Les aspects techniques (délais, jalons, indicateurs, etc.) et humains (communication, gestion ds conflits, etc) seront abordés.</p>
+						</texte>
+					</resume>
+					<lieu>&dom.lieu-saint-jerome;</lieu>
+				</unite>
+				<unite id="ENSINCU68">
+					<nom>Cloud computing</nom>
+					<credits>3</credits>
+					<ref_intervenant ref="Omar_BOUCELMA"/>
+					<resume>
+						<texte>
+							<p>L’objectif de ce nbrCours et d’apprendre à créer et déployer des applications Cloud. Le nbrCours couvre les aspects suivants :</p>
+							<ul>
+								<li>Définition et types de cloud : cloud privé, public, hybride</li>
+								<li>Concepts et services cloud : SaaS, PaaS, IaaS, …</li>
+								<li>Risques et opportunités du cloud : gestion de la sécurité (données sensibles), accès instantanés à des ressources de calcul et de stockage (élasticité),</li>
+								<li>Création et déploiement d’applications : Google Cloud, Amazon, Azure, ….</li>
+							</ul>
+						</texte>
+					</resume>
+					<lieu>&dom.lieu-saint-jerome;</lieu>
+				</unite>
+				<unite id="ENSINCU74">
+					<nom>Introduction au Big Data</nom>
+					<credits>3</credits>
+					<ref_intervenant ref="Omar_BOUCELMA"/>
+					<resume/>
+					<lieu>&dom.lieu-saint-jerome;</lieu>
+				</unite>
+				<unite id="ENSINCU75">
+					<nom>Business process</nom>
+					<credits>3</credits>
+					<ref_intervenant ref="Omar_BOUCELMA"/>
+					<resume/>
+					<lieu>&dom.lieu-saint-jerome;</lieu>
+				</unite>
+				<unite id="ENSISCU28">
+					<nom>RI8 : Web services</nom>
+					<credits>3</credits>
+					<ref_intervenant ref="Omar_BOUCELMA"/>
+					<resume/>
+					<lieu>&dom.lieu-saint-jerome;</lieu>
+				</unite>
+				<unite id="ENSINCU27">
+					<nom>Anglais 2</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume>
+						<texte>
+							<p>Expression orale et écrite : exposés sur des sujets scientifiques et / ou professionnels, travaux écrits. Préparation et passage du TOEIC.</p>
+						</texte>
+					</resume>
+					<lieu>&dom.lieu-saint-jerome;</lieu>
+				</unite>
+				<unite id="ENSINCU28">
+					<nom>Communication 2</nom>
+					<credits>3</credits>
+					<ref_intervenant ref="Lydie_RENE-CHABAROT"/>
+					<resume>
+						<texte>
+							<p>L’étudiant apprend à effectuer un bilan de son parcours de formation, à élaborer un projet professionnel personnel, à cerner ses motivations et à enrichir ses connaissances des métiers et du marché de l’informatique pour se constituer un portefeuille de compétences.</p>
+							<ul>
+							    <li>Valorisation du parcours de formation</li>
+							    <li>Clarification des motivations et de leurs incidences sur des choix professionnels</li>
+							    <li>Identification des aptitudes et des compétences</li>
+							    <li>Positionnement du projet personnel et professionnel</li>
+							    <li>Ajustement des profils annonce / candidature</li>
+							    <li>Préparation aux entretiens de recrutement</li>
+							    <li>Rédaction de curriculum vitae et de lettres de motivation</li>
+							</ul>
+						</texte>
+					</resume>
+					<lieu>&dom.lieu-saint-jerome;</lieu>
+				</unite>
+			</unites_obligatoires>
+		</semestre>
+		<semestre id="S4">
+			<unites_obligatoires>
+				<unite id="ENSINDU3">
+					<nom>Projet industriel de mise en application</nom>
+					<credits>6</credits>
+					<ref_intervenant ref="Omar_BOUCELMA"/>
+					<resume>
+						<texte>
+							<p>Rédaction du cahier des charges. Conception de l'application. Développement et test. Rédaction d'un mémoire et présentation.</p>
+						</texte>
+					</resume>
+				</unite>
+				<unite id="ENSINDU4">
+					<nom>Stage en entreprise</nom>
+					<credits>24</credits>
+					<ref_intervenant ref="Omar_BOUCELMA"/>
+					<resume>
+						<texte>
+							<p>Recherche d'un stage. Validation du sujet de stage. Suivi du bon déroulement du stage. Aide à la rédaction du mémoire de stage. Soutenance et évaluation du stage.</p>
+						</texte>
+					</resume>
+				</unite>
+			</unites_obligatoires>
+		</semestre>
+		<debouches>
+			<texte>
+				<p>La spécialité SIR vise des métiers de l’informatique à forte valeur ajoutée grâce aux compétences acquises dans trois domaines clés : les technologies avancées du Web, les nouveaux modes de développement et de déploiement de solutions logicielles et les processus métiers de l’entreprise.</p>
+				<p>Parmi les métiers visés on trouve :</p>
+				<ul>
+					<li>Architecte en Systèmes d’Information,</li>
+					<li>Ingénieur Développement Logiciels,</li>
+					<li>Ingénieur Intégration,</li>
+					<li>Consultant ERP/BPM,</li>
+					<li>Chef de projet.</li>
+				</ul>
+			</texte>
+		</debouches>
+	</parcours>
+	<parcours code="GL">
+		<nom>Génie logiciel</nom>
+		<lieu>&dom.lieu-saint-jerome;</lieu>
+		<responsable ref="Djamal_HABET"/>
+		<description>
+			<texte>
+				<p>La production d'un logiciel est une tâche très complexe mettant en oeuvre plusieurs ressources, notamment humaines, matériels et technologiques. La spécialité « Génie logiciel » a pour objectif d'apporter aux étudiants les compétences approfondies requises pour pouvoir intervenir dans toutes les phases de la production logiciel.</p>
+			</texte>
+		</description>
+		<semestre id="S3">
+			<unites_obligatoires>
+				<unite id="ENSINCU41">
+					<nom>Qualité logicielle : outils et méthodes</nom>
+					<credits>6</credits>
+					<ref_intervenant ref="Djamal_HABET"/>
+					<resume>
+						<texte>
+							<p>Qualité logicielle, test et validation logiciel, ateliers de génie logiciel.</p>
+						</texte>
+					</resume>
+				</unite>		
+				<unite id="ENSINCU42">
+					<nom>Spécification logicielle</nom>
+					<credits>3</credits>
+					<ref_intervenant ref="Djamal_HABET"/>			
+					<resume>
+						<texte>
+							<p>Qualité logicielle, test et validation logiciel, ateliers de génie logiciel.</p>
+						</texte>
+					</resume>
+				</unite>
+				<unite id="ENSINCU43">
+					<nom>Conception logicielle</nom>
+					<credits>3</credits>
+					<ref_intervenant ref="Nicola_OLIVETTI"/>
+					<resume>
+						<texte>
+							<p>Conception objet, patrons de conception, conception IHM.</p>
+						</texte>
+					</resume>
+				</unite>
+				<unite id="ENSINCU44">
+					<nom>Architecture logicielle JEE</nom>
+					<credits>3</credits>
+					<ref_intervenant ref="Jean-Luc_MASSAT"/>
+					<resume>
+						<texte>
+							<p>Composants logiciels , architectures N-tier, middleware, Entreprise Java Beans (EJB).</p>
+						</texte>
+					</resume>
+				</unite>
+				<unite id="ENSINCU45">
+					<nom>Technologies du Web et Web 2.0</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume>
+						<texte>
+							<p>Protocoles de communication, standards Web, Langages à balises, programmation Web, Ajax, XUL, standardisation et convergence d'interfaces.</p>
+						</texte>
+					</resume>
+				</unite>
+				<unite id="ENSINCU46">
+					<nom>XML avancé</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume>
+						<texte>
+							<p>Modélisation et navigation, XSchema et XPath avancés, Requêtage des bases documentaires, DOM et SAX avancés.</p>
+						</texte>
+					</resume>
+				</unite>
+				<unite id="ENSINCU47">
+					<nom>Gestion de projet</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume>
+						<texte>
+							<p>Définition et acteurs d'un projet, organisation d'un projet, techniques de planification, estimation prévisionnelle d'un projet, pilotage et contrôle d'un projet, recette finale.</p>
+						</texte>
+					</resume>
+				</unite>
+				<unite id="ENSINCU27">
+					<nom>Anglais 2</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume>
+						<texte>
+							<p>Expression orale et écrite : exposés sur des sujets scientifiques et / ou professionnels, travaux écrits. Préparation et passage du TOEIC.</p>
+						</texte>
+					</resume>
+					<lieu>&dom.lieu-saint-jerome;</lieu>
+				</unite>
+				<unite id="ENSINCU28">
+					<nom>Communication 2</nom>
+					<credits>3</credits>
+					<ref_intervenant ref="Lydie_RENE-CHABAROT"/>
+					<resume>
+						<texte>
+							<p>L’étudiant apprend à effectuer un bilan de son parcours de formation, à élaborer un projet professionnel personnel, à cerner ses motivations et à enrichir ses connaissances des métiers et du marché de l’informatique pour se constituer un portefeuille de compétences.</p>
+							<ul>
+							    <li>Valorisation du parcours de formation</li>
+							    <li>Clarification des motivations et de leurs incidences sur des choix professionnels</li>
+							    <li>Identification des aptitudes et des compétences</li>
+							    <li>Positionnement du projet personnel et professionnel</li>
+							    <li>Ajustement des profils annonce / candidature</li>
+							    <li>Préparation aux entretiens de recrutement</li>
+							    <li>Rédaction de curriculum vitae et de lettres de motivation</li>
+							</ul>
+						</texte>
+					</resume>
+					<lieu>&dom.lieu-saint-jerome;</lieu>
+				</unite>
+			</unites_obligatoires>
+		</semestre>
+		<semestre id="S4">
+			<unites_obligatoires>
+				<unite id="ENSINDU3">
+					<nom>Projet industriel de mise en application</nom>
+					<credits>6</credits>
+					<ref_intervenant/>
+					<resume>
+						<texte>
+							<p>Rédaction du cahier des charges. Conception de l'application. Développement et test. Rédaction d'un mémoire et présentation.</p>
+						</texte>
+					</resume>
+				</unite>
+				<unite id="ENSINDU4">
+					<nom>Stage en entreprise</nom>
+					<credits>24</credits>
+					<ref_intervenant ref="Omar_BOUCELMA"/>
+					<ref_intervenant/>
+					<resume>
+						<texte>
+							<p>Recherche d'un stage. Validation du sujet de stage. Suivi du bon déroulement du stage. Aide à la rédaction du mémoire de stage. Soutenance et évaluation du stage.</p>
+						</texte>
+					</resume>
+				</unite>
+			</unites_obligatoires>
+		</semestre>
+		<debouches>
+			<texte>
+				<p>Ingénieur informaticien, Ingénieur d’études et de développement, Ingénieur qualité logicielle, Architecte JEE, Architecte d’applications, Développeur et concepteur d’applications, Ingénieur développeur Web, Chef de projets, Consultant.</p>
+				<p>Parmi les métiers visés on trouve :</p>
+				<ul>
+					<li>Architecte en Systèmes d’Information,</li>
+					<li>Ingénieur Développement Logiciels,</li>
+					<li>Ingénieur Intégration,</li>
+					<li>Consultant ERP/BPM,</li>
+					<li>Chef de projet.</li>
+				</ul>
+			</texte>
+		</debouches>
+	</parcours>
+	<parcours code="IF">
+		<nom>Informatique fondamentale</nom>
+		<lieu>&dom.lieu-luminy;</lieu>
+		<responsable ref="Thierry_ARTIERES"/>
+		<responsable ref="Pierre-Alain_REYNIER"/>
+		<description>
+			<texte>
+				<p>L'objectif de la spécialité Informatique Fondamentale est de donner des connaissances solides dans le domaine des fondements de l'informatique. Il s'agit d'acquérir des connaissances sur les concepts et les méthodes dans l es thèmes couverts par le Laboratoire d'Informatique Fondamentale.</p>
+			</texte>
+		</description>
+		<semestre id="S3">
+			<unites_obligatoires>
+				<unite id="ENSINCU1">
+					<nom>Algorithmique et complexité</nom>
+					<credits>6</credits>
+					<ref_intervenant/>
+					<resume>
+						<texte>
+							<p>Principales techniques de conception et analyse d'algorithmes (efficaces) pour les problèmes polynomiaux et les problèmes NP-complets. Complexité de l'approximation, du comptage. Complexité paramétrée. Classes probabilistes.</p>
+						</texte>
+					</resume>
+				</unite>		
+				<unite id="ENSINCU2">
+					<nom>Logique, automates et aspects formels de la théorie des langages</nom>
+					<credits>6</credits>
+					<ref_intervenant/>			
+					<resume>
+						<texte>
+							<p>Logique du premier ordre. Logiques modales et temporelles. Logiques monadiques. Décidabilité de logiques .
+
+							Automates de mots finis et infinis. Automates d'arbres et langages réguliers d'arbres. Liens avec la logique</p>
+						</texte>
+					</resume>
+				</unite>
+				<unite id="ENSINCU3">
+					<nom>Statistique inférentielle</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume>
+						<texte>
+							<p>Théorie des probabilités et statistique inférentielle. Ce cours permet d'acquérir des bases solides pour l'apprentissage automatique ou le traitement automatique de la langue naturelle</p>
+						</texte>
+					</resume>
+				</unite>
+			</unites_obligatoires>
+			<unites_optionnelles credits_options="15">
+				<unite id="ENSINCU4">
+					<nom>Nouveaux défis en apprentissage</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume>
+						<texte>
+							<p>Étude des méthodes d'apprentissage qui traitent, de façon tant théorique qu'appliquée, séparément ou simultanément, un ou plusieurs problèmes classiques.</p>
+						</texte>
+					</resume>
+				</unite>
+				<unite id="ENSINCU5">
+					<nom>Théorie de l'apprentissage</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume>
+						<texte>
+							<p>Avancées récentes en théorie de l'apprentissage statistique : complexité de Rademacher, bornes PAC-Bayes, stabilité algorithmique, schémas de compression.</p>
+						</texte>
+					</resume>
+				</unite>
+				<unite id="ENSINCU6">
+					<nom>Inférence grammaticale</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume>
+						<texte>
+							<p>Large panorama des différents algorithmes et résultats obtenus récemment pour l'apprentissage de représentations grammaticales de langages.</p>
+						</texte>
+					</resume>
+				</unite>
+				<unite id="ENSINCU7">
+					<nom>Apprentissage numérique</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume>
+						<texte>
+							<p>Étude de quelques unes des méthodes les plus performantes en apprentissage numérique : les réseaux de neurones, les modèles de Markov cachés et les machines à vecteurs de support.</p>
+						</texte>
+					</resume>
+				</unite>
+				<unite id="ENSINCU8">
+					<nom>Fouille de bases de données</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume>
+						<texte>
+							<p>Bases mathématiques sur lesquelles reposent les méthodes de fouille de bases de données qui sont également présentées et visent soit l'aide à la décision soit l'administration de bases de données.</p>
+						</texte>
+					</resume>
+				</unite>
+				<unite id="ENSINCU9">
+					<nom>Entrepôts de données</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume>
+						<texte>
+							<p>Étude de la problématique posée par les entrepôts de données (ou data warehouse ou OLAP), depuis leur conception jusqu'aux algorithmes de calcul de cubes de données.</p>
+						</texte>
+					</resume>
+				</unite>
+				<unite id="ENSINCU10">
+					<nom>Fouille de données avancée</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume>
+						<texte>
+							<p>Approfondissement des techniques de fouille de données en étudiant les méthodes de réduction des règles d'association ainsi que leur application à la classification supervisée et en mettant en œuvre des algorithmes par niveaux.</p>
+						</texte>
+					</resume>
+				</unite>
+				<unite id="ENSINCU11">
+					<nom>Géométrie discrète</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume>
+						<texte>
+							<p>Introduction à la géométrie discrète dans $Z^n$, en trois volets : des rappels sur la géométrie des nombres, un état de l'art en géométrie discrète, enfin une étude des transformations de distances et leurs applications.</p>
+						</texte>
+					</resume>
+				</unite>
+				<unite id="ENSINCU12">
+					<nom>Algorithmique des graphes et réseaux</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume>
+						<texte>
+							<p>Algorithmes exacts. Algorithmes d'approximation. Structures de données distribuées.</p>
+						</texte>
+					</resume>
+				</unite>
+				<unite id="ENSINCU13">
+					<nom>Espaces métriques : structure et algorithmiques</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume>
+						<texte>
+							<p>Introduction aux principales classes et constructions des espaces métriques et des graphes métriques,. Plongements isométriques ou à faible distorsion des espaces métriques dans des espaces géométriques, leur applications en informatique et mathématiques.</p>
+						</texte>
+					</resume>
+				</unite>
+				<unite id="ENSINCU14">
+					<nom>Optimisation combinatoire et programmation en nombres entiers</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume>
+						<texte>
+							<p>Principaux concepts, algorithmes, méthodes et outils qui permettent de résoudre les problèmes d'optimisation combinatoire, en particulier ceux qui se formulent comme des programmes linéaires en nombres entiers.</p>
+						</texte>
+					</resume>
+				</unite>
+				<unite id="ENSINCU15">
+					<nom>Logiques et jeux</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume>
+						<texte>
+							<p>Mu-calcul , syntaxe-sémantique. Model-checking par jeux de parité, tableaux-decidabilité. Puissance expressive</p>
+						</texte>
+					</resume>
+				</unite>
+				<unite id="ENSINCU16">
+					<nom>Algorithmique distribuée 2</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume>
+						<texte>
+							<p>Algorithmes de diffusion, diffusion avec retour. Algorithmes d'élection, détection de la terminaison. Tolérance aux pannes</p>
+						</texte>
+					</resume>
+				</unite>
+				<unite id="ENSINCU17">
+					<nom>Vérification et sécurité</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume>
+						<texte>
+							<p>Model Checking. Algorithmes de vérification. Modèles de sécurité. Vérification de programmes par analyse statique.</p>
+						</texte>
+					</resume>
+				</unite>
+				<unite id="ENSINCU18">
+					<nom>Modèles du parallélisme</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume>
+						<texte>
+							<p>Modèles classiques de systèmes. Résultats principaux du domaine concernant les problèmes d'accessibilité, de model-checking, de contrôle ou de synthèse associés.</p>
+						</texte>
+					</resume>
+				</unite>
+				<unite id="ENSINCU19">
+					<nom>Modèles et connaissances linguistiques pour le TAL</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume>
+						<texte>
+							<p>Traitement automatique des langues dans ses aspects applications. Différentes types de connaissances et modèles symboliques sur la langue. Plusieurs ressources linguistiques pour le français sont examinées.</p>
+						</texte>
+					</resume>
+				</unite>
+				<unite id="ENSINCU20">
+					<nom>Syntaxe et sémantique : modèles et outils</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume>
+						<texte>
+							<p>Principes et nature des représentations syntaxiques et sémantiques associables à une phrase. Différents formalismes seront étudiés pour exprimer ces représentation</p>
+						</texte>
+					</resume>
+				</unite>
+				<unite id="ENSINCU21">
+					<nom>Modèles numériques pour le TAL</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume>
+						<texte>
+							<p>Présentation des modèles numériques utilisés pour différentes tâches du Traitement Automatique des Langue. Algorithmes qui permettent d'en estimer les paramètres à partir de données et les algorithmes de décodage.</p>
+						</texte>
+					</resume>
+				</unite>
+				<unite id=" ENSINCU22">
+					<nom>Applications du Traitement Automatique de la Langue</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume>
+						<texte>
+							<p>État de l'art dans différentes applications du Traitement Automatique des Langues, tel que la traduction automatique, le résumé automatique ainsi que sur les traitements de « bas niveau » nécessaires dans la majorité des applications</p>
+						</texte>
+					</resume>
+				</unite>
+				<unite id="ENSINCU23">
+					<nom>Algorithmique des chaînes de caractères</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume>
+						<texte>
+							<p>Différentes structures et algorithmes relatifs aux traitements des chaînes de caractères.</p>
+						</texte>
+					</resume>
+				</unite>
+				<unite id="ENSINCU24">
+					<nom>Classification et phylogénie</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume>
+						<texte>
+							<p>Méthodes de classification et de construction d'arbres à partir de distances.</p>
+						</texte>
+					</resume>
+				</unite>
+				<unite id="ENSINCU25">
+					<nom>Modèles markoviens</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume>
+						<texte>
+							<p>Présentation des chaînes de Markov, leurs algorithmes et applications.</p>
+						</texte>
+					</resume>
+				</unite>
+				<unite id="ENSINCU26">
+					<nom>Logiques non-standards</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume>
+						<texte>
+							<p>État de l'art dans différentes applications du Traitement Automatique des Langues, tel que la traduction automatique, le résumé automatique ainsi que sur les traitements de « bas niveau » nécessaires dans la majorité des applications.</p>
+						</texte>
+					</resume>
+				</unite>
+			</unites_optionnelles>
+		</semestre>
+		<semestre id="S4">
+			<unites_obligatoires>
+				<unite id="ENSINDU1">
+					<nom>Communication scientifique</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume>
+						<texte>
+							<p>Lecture d'un article en anglais et exposé oral.</p>
+						</texte>
+					</resume>
+				</unite>
+				<unite id="ENSINDU2">
+					<nom>Initiation à la recherche</nom>
+					<credits>27</credits>
+					<ref_intervenant/>
+					<ref_intervenant/>
+					<resume/>
+				</unite>
+			</unites_obligatoires>
+		</semestre>
+		<debouches>
+			<texte>
+				<p>Emplois recherche et développement dans des entreprises privées ou des établissements publics, ou emploi d'enseignant-chercheur pour les étudiants qui poursuivent en thèse.</p>
+			</texte>
+		</debouches>
+	</parcours>
+	<parcours code="INF">
+		<nom>Informatique</nom>
+		<lieu>&dom.lieu-saint-jerome;</lieu>
+		<responsable ref="Nicola_OLIVETTI"/>
+		<description>
+			<texte>
+				<p>L’objectif est d’approfondir les connaissances de bases en Informatique sur l’intelligence artificielle, les systèmes d’information, conception et vérification des systèmes, informatique décisionnelle.</p>
+			</texte>
+		</description>
+		<semestre id="S3">
+			<unites_obligatoires>
+				<unite id="ENSISCU20">
+					<nom>RTC : Concepts fondamentaux de la modélisation</nom>
+					<credits>6</credits>
+					<ref_intervenant/>
+					<resume>
+						<texte>
+							<p>Concepts et formalismes de base pour la modélisation temporelle et spatiale (modèles de comportements, modèles de structures et modèles géométriques) et la modélisation de l'information et de la connaissance (méthodes de représentation de la connaissance, formalismes logiques, expression de problèmes à l'aide de contraintes).</p>
+						</texte>
+					</resume>
+				</unite>		
+			</unites_obligatoires>
+			<unites_optionnelles credits_options="15">
+				<unite id="ENSISCU21">
+					<nom>RI1 : Fondements logiques et algorithmiques</nom>
+					<credits>6</credits>
+					<ref_intervenant/>			
+					<resume>
+						<texte>
+							<p>Introduction aux notions fondamentales logiques et algorithmiques qui trouvent leurs applications dans plusieurs domaines : systèmes multi-agents, vérification des systèmes, ontologies pour le web sémantique, traitement de connaissance incomplète et révisable, recherche d’information et fouilles des données. Le cours prévoit une partie portant sur la complexité structurelle nécessaire à l’analyse et à l’évaluation des tous formalismes logiques d’un point de vue algorithmique ainsi que sur les algorithmes probabilistes utilisés dans la recherche d’information et fouilles des données.</p>
+						</texte>
+					</resume>
+				</unite>
+				<unite id="ENSISCU22">
+					<nom>RI2 : Fondements de programmation et de satisfiabilité</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume>
+						<texte>
+							<p>Etude des problèmes de satisfaction de contraintes (CSP) et du problème de la satisfiabilité en logique propositionnelle (SAT). Nous nous intéressons en particulier aux questions portant sur la résolution de ces problèmes (méthodes et fondements théoriques) ainsi qu'aux fragments polynomiaux existant en SAT et CSP.</p>
+						</texte>
+					</resume>
+				</unite>
+				<unite id="ENSISCU23">
+					<nom>RI3 : Représentation des connaissances : Approfondissement et applications</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume>
+						<texte>
+							<p>Acquérir des notions avancées en représentation de connaissances et raisonnement dans les domaines de : la révision et la fusion des croyances, l’Answer Set Programming et les théories formelles de l’argumentation.</p>
+						</texte>
+					</resume>
+				</unite>
+				<unite id="ENSISCU24">
+					<nom>RI4 : Planification, configuration et raisonnement temporel et spatial</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume/>
+				</unite>
+				<unite id="ENSISCU25">
+					<nom>RI5 : Agents et ontologies pour les systèmes d'information et le web sémantique</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume/>
+				</unite>
+				<unite id="ENSISCU26">
+					<nom>RI6 : Approches avancées de conception de systèmes d'information</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume/>
+				</unite>
+				<unite id="ENSISCU27">
+					<nom>RI7 : Extraction et intégration d'information du web</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume/>
+				</unite>
+				<unite id="ENSISCU28">
+					<nom>RI8 : Web services</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume/>
+				</unite>
+				<unite id="ENSISCU29">
+					<nom>RIS1 : Traitement de données multimodales</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume/>
+				</unite>
+				<unite id="ENSISCU30">
+					<nom>RIS2 : Formalismes à événements discrets</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume/>
+				</unite>
+				<unite id="ENSISCU31">
+					<nom>RIS3 : Simulation distribuée et modèles hétérogènes</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume/>
+				</unite>
+				<unite id="ENSISCU32">
+					<nom>RIS4 : Aide à la décision</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume/>
+				</unite>
+			</unites_optionnelles>
+			<unites_optionnelles credits_options="9">
+				<unite id="ENSISCU1">
+					<nom>AU4 : Classification, apprentissage et décision</nom>
+					<credits>6</credits>
+					<ref_intervenant/>
+					<resume>
+						<texte>
+							<p>Méthodes non supervisées et supervisées, classification Bayésienne, évaluation et validation, logique floue.</p>
+						</texte>
+					</resume>
+				</unite>
+				<unite id="ENSISCU4">
+					<nom>IM10 : Imagerie médicale</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume>
+						<texte>
+							<p>Origine et nature des images médicales (les différentes modalités), Analyse des images médicales, Reconstruction et imagerie médicale 3D, Recalage d’images, Applications.</p>
+						</texte>
+					</resume>
+				</unite>
+				<unite id="ENSISCU5">
+					<nom>IM11 : Modélisation algorithmique, différentielle et discrète</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume>
+						<texte>
+							<p>Enveloppe convexe, triangulation de Delaunay, diagramme de Voronoi, Courbures discrètes, Distances discrètes, Axes médians et squelettes, Topologie élémentaire et nombres de Betti.</p>
+						</texte>
+					</resume>
+				</unite>
+				<unite id="ENSISCU6">
+					<nom>IM12 : Analyse de vidéo et reconnaissance de forme</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume>
+						<texte>
+							<p>Détection de mouvement dans une séquence vidéo, Suivi d’objets, Reconnaissance de formes , Applications : Vidéo surveillance, Détection et suivi de personnes , Suivi des visages et détection des émotions.</p>
+						</texte>
+					</resume>
+				</unite>
+				<unite id="ENSISCU7">
+					<nom>IM13 : Vision industrielle</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume>
+						<texte>
+							<p>Introduction sur les capteurs , Vision active, Vision passive , Technique de mosaiquage d’images, Recalage multimodal, Reconstruction 3D, Application : Photogrammétrie, Inspection industrielle.</p>
+						</texte>
+					</resume>
+				</unite>
+				<unite id="ENSISCU8">
+					<nom>IM14 : Modèles pour la production d'images : CAO et jeux vidéo</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume>
+						<texte>
+							<p>la Conception Assistée par Ordinateur,
+								la Visualisation, la Simulation, la Réalité Virtuelle et Augmentée,
+								les Jeux Vidéos.</p>
+						</texte>
+					</resume>
+				</unite>
+				<unite id="ENSISCU55">
+					<nom>IM15 : Modèles pour la production d'images, traitement et visualisation de données géométriques à haute-performance</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume/>
+				</unite>
+				<unite id="ENSISCU3">
+					<nom>IM6 : Animation et simulation physique</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume/>
+				</unite>
+				<unite id="ENSISCU2">
+					<nom>IM8 : Segmentation 2</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume>
+						<texte>
+							<p>Contours actifs, filtrage non linéaire/diffusion, approches stochastiques (Markov/Bayes).</p>
+						</texte>
+					</resume>
+				</unite>
+				<unite id="ENSISCU33">
+					<nom>R2 : Communication et interaction homme-machine</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume/>
+				</unite>
+				<unite id="ENSISCU34">
+					<nom>RE1 : Problématique, démarche, modèles et objects de conception</nom>
+					<credits>6</credits>
+					<ref_intervenant/>
+					<resume/>
+				</unite>
+				<unite id="ENSISCU35">
+					<nom>RE2 : Modèles et objets de conception</nom>
+					<credits>6</credits>
+					<ref_intervenant/>
+					<resume/>
+				</unite>
+				<unite id="ENSISCU36">
+					<nom>RE3 : Systèmes intelligents</nom>
+					<credits>6</credits>
+					<ref_intervenant/>
+					<resume/>
+				</unite>
+				<unite id="ENSISCU37">
+					<nom>RE4 : Conception et architecture</nom>
+					<credits>6</credits>
+					<ref_intervenant/>
+					<resume/>
+				</unite>
+				<unite id="ENSISCU38">
+					<nom>RO1 : Une UE extérieure de 3 crédits (validation requise)</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume/>
+				</unite>
+				<unite id="ENSISCU39">
+					<nom>RO2 : Une UE extérieure de 6 crédits (validation requise)</nom>
+					<credits>6</credits>
+					<ref_intervenant/>
+					<resume/>
+				</unite>
+				<unite id="ENSISCU40">
+					<nom>RS1 : Commande et diagnostic des systèmes complexes</nom>
+					<credits>6</credits>
+					<ref_intervenant/>
+					<resume/>
+				</unite>
+				<unite id="ENSISCU41">
+					<nom>RS2 : Systèmes à structure variable et planification</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume/>
+				</unite>
+				<unite id="ENSISCU42">
+					<nom>RS3 : Génie électrique et mécatronique</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume/>
+				</unite>
+				<unite id="ENSISCU43">
+					<nom>RS4 : Pronostic des systèmes</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume/>
+				</unite>
+				<unite id="ENSISCU44">
+					<nom>RS5 : Procédés à énergie renouvelable</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume/>
+				</unite>
+				<unite id="ENSISCU45">
+					<nom>RS6 : Réseaux de neurones</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume/>
+				</unite>
+				<unite id="ENSISCU46">
+					<nom>RS7 : Conduite et gestion de la production</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume/>
+				</unite>
+				<unite id="ENSISCU21">
+					<nom>RI1 : Fondements logiques et algorithmiques</nom>
+					<credits>6</credits>
+					<ref_intervenant/>
+					<resume>
+						<texte>
+							<p>Introduction aux notions fondamentales logiques et algorithmiques qui trouvent leurs applications dans plusieurs domaines : systèmes multi-agents, vérification des systèmes, ontologies pour le web sémantique, traitement de connaissance incomplète et révisable, recherche d’information et fouilles des données. Le cours prévoit une partie portant sur la complexité structurelle nécessaire à l’analyse et à l’évaluation des tous formalismes logiques d’un point de vue algorithmique ainsi que sur les algorithmes probabilistes utilisés dans la recherche d’information et fouilles des données.</p>
+						</texte>
+					</resume>
+				</unite>
+				<unite id="ENSISCU22">
+					<nom>RI2 : Fondements de programmation et de satisfiabilité</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume>
+						<texte>
+							<p>Etude des problèmes de satisfaction de contraintes (CSP) et du problème de la satisfiabilité en logique propositionnelle (SAT). Nous nous intéressons en particulier aux questions portant sur la résolution de ces problèmes (méthodes et fondements théoriques) ainsi qu'aux fragments polynomiaux existant en SAT et CSP.</p>
+						</texte>
+					</resume>
+				</unite>
+				<unite id="ENSISCU23">
+					<nom>RI3 : Représentation des connaissances : Approfondissement et applications</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume>
+						<texte>
+							<p>Acquérir des notions avancées en représentation de connaissances et raisonnement dans les domaines de : la révision et la fusion des croyances, l’Answer Set Programming et les théories formelles de l’argumentation.</p>
+						</texte>
+					</resume>
+				</unite>
+				<unite id="ENSISCU24">
+					<nom>RI4 : Planification, configuration et raisonnement temporel et spatial</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume/>
+				</unite>
+				<unite id="ENSISCU25">
+					<nom>RI5 : Agents et ontologies pour les systèmes d'information et le web sémantique</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume/>
+				</unite>
+				<unite id="ENSISCU26">
+					<nom>RI6 : Approches avancées de conception de systèmes d'information</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume/>
+				</unite>
+				<unite id="ENSISCU27">
+					<nom>RI7 : Extraction et intégration d'information du web</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume/>
+				</unite>
+				<unite id="ENSISCU28">
+					<nom>RI8 : Web services</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume/>
+				</unite>
+				<unite id="ENSISCU29">
+					<nom>RIS1 : Traitement de données multimodales</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume/>
+				</unite>
+				<unite id="ENSISCU30">
+					<nom>RIS2 : Formalismes à événements discrets</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume/>
+				</unite>
+				<unite id="ENSISCU31">
+					<nom>RIS3 : Simulation distribuée et modèles hétérogènes</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume/>
+				</unite>
+				<unite id="ENSISCU32">
+					<nom>RIS4 : Aide à la décision</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume/>
+				</unite>
+			</unites_optionnelles>
+		</semestre>
+		<semestre id="S4">
+			<unites_obligatoires>
+				<unite id="ENSISDU3">
+					<nom>R bib : Étude bibliographique</nom>
+					<credits>6</credits>
+					<ref_intervenant/>
+					<resume/>
+				</unite>
+				<unite id="ENSISDU4">
+					<nom>Stage de recherche</nom>
+					<credits>24</credits>
+					<ref_intervenant/>
+					<ref_intervenant/>
+					<resume/>
+				</unite>
+			</unites_obligatoires>
+		</semestre>
+		<debouches>
+			<texte>
+				<p>Enseignants, Chercheurs et ingénieurs de recherche, experts, chef de projets R&amp;D en :</p>
+				<ul>
+					<li>systèmes d'information,</li>
+					<li>intelligence artificielle,</li>
+					<li>génie logiciel,</li>
+					<li>imagerie numérique.</li>
+				</ul>
+			</texte>
+		</debouches>
+	</parcours>
+	<parcours code="RIM">
+		<nom>Recherche d'informations multimédia</nom>
+		<lieu>&dom.lieu-luminy;</lieu>
+		<responsable ref="Frederic_BECHET"/>
+		<description>
+			<texte>
+				<p>L'objectif de la spécialité RIM est de former des spécialistes du traitement et de la recherche de contenus multimédias. Du point de vue des débouchés professionnels, cette formation vise à produire des informaticiens spécialistes du traitement des données multimédia et de la recherche d'information qui pourront s'intégrer dans des entreprises innovantes centrées autour des domaines du multimédia et de l'internet.</p>
+			</texte>
+		</description>
+		<semestre id="S3">
+			<unites_obligatoires>
+				<unite id="ENSINCU56">
+					<nom>Traitement automatique de la parole</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume>
+						<texte>
+							<p>L'objectif de ce cours est de présenter d'une part les principaux formalismes, modèles et algorithmes pour le traitement automatique de l'oral et d'autre part les outils logiciels permettant de construire une application incluant de la reconnaissance et/ou de la synthèse vocale. Le but de ce cours est de donner aux étudiants une connaissance du potentiel et des limites de la technologie actuelle dans ce domaine.</p>
+						</texte>
+					</resume>
+				</unite>
+				<unite id="ENSINCU58">
+					<nom>Apprentissage automatique et classification</nom>
+					<credits>6</credits>
+					<ref_intervenant/>
+					<resume>
+						<texte>
+							<p>La classification par apprentissage automatique (supervisé et non supervisé) est introduite dans ses objectifs et ses principes. En s'appuyant sur des méthodes éprouvées (arbres de décision, classifieur naïf de Bayes, SVM, k-means, etc.), les grands principes de l'apprentissage automatique pour la classification sont présentés, et illustrés dans le cas de données multimedia (texte et image). Un accent tout particulier est porté sur l'environnement méthodologique de l'apprentissage automatique (estimation de paramètres, évaluation des classifieurs, données manquantes ou bruitées, etc.)</p>
+						</texte>
+					</resume>
+				</unite>
+				<unite id="ENSINCU59">
+					<nom>Recherche et indexation des données multimédia</nom>
+					<credits>6</credits>
+					<ref_intervenant/>
+					<resume>
+						<texte>
+							<p>Ce cours présente une introduction au domaine de la Recherche d’Information Multimédia. La première partie du cours introduit les principes généraux de la RI, appliqués aux documents textuels : indexation ; interrogation ; évaluation. Les modèles classiques : booléen, vectoriel et probabiliste sont présentés, ainsi que les notions d’extension de requête et de bouclage de pertinence. Ce cours s'intéresse aussi aux spécificités des différents formats image et vidéo et présente des solutions pratique pour la mise en oeuvre de serveurs de streaming vidéo.</p>
+						</texte>
+					</resume>
+				</unite>
+				<unite id="ENSINCU66">
+					<nom>Nouvelles applications du Traitement Automatique de la Langue (TAL)</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume>
+						<texte>
+							<p>État de l'art dans différentes applications du Traitement Automatique des Langues, tel que la traduction automatique, le résumé automatique ainsi que surles traitements de « bas niveau » nécessaires dans la majorité des applications.</p>
+						</texte>
+					</resume>
+				</unite>
+				<unite id="ENSINCU69">
+					<nom>Recherche d'information</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume/>
+				</unite>
+				<unite id="ENSINCU27">
+					<nom>Anglais 2</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume>
+						<texte>
+							<p>Expression orale et écrite : exposés sur des sujets scientifiques et / ou professionnels, travaux écrits. Préparation et passage du TOEIC.</p>
+						</texte>
+					</resume>
+				</unite>
+				<unite id="ENSINCU28">
+					<nom>Communication 2</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume>
+						<texte>
+							<p>L’étudiant apprend à effectuer un bilan de son parcours de formation, à élaborer un projet professionnel personnel, à cerner ses motivations et à enrichir ses connaissances des métiers et du marché de l’informatique pour se constituer un portefeuille de compétences.</p>
+							<ul>
+								<li>Valorisation du parcours de formation</li>
+								<li>Clarification des motivations et de leurs incidences sur des choix professionnels</li>
+								<li>Identification des aptitudes et des compétences</li>
+								<li>Positionnement du projet personnel et professionnel</li>
+								<li>Ajustement des profils annonce / candidature</li>
+								<li>Préparation aux entretiens de recrutement</li>
+								<li>Rédaction de curriculum vitae et de lettres de motivation</li>
+							</ul>
+							<p></p>
+						</texte>
+					</resume>
+				</unite>
+			</unites_obligatoires>
+			<unites_optionnelles credits_options="3">
+				<unite id="ENSINCU4">
+					<nom>Nouveaux défis en apprentissage</nom>
+					<credits>3</credits>
+					<ref_intervenant/>			
+					<resume>
+						<texte>
+							<p>Étude des méthodes d'apprentissage qui traitent, de façon tant théorique qu'appliquée, séparément ou simultanément, un ou plusieurs problèmes classiques</p>
+						</texte>
+					</resume>
+				</unite>
+				<unite id="ENSINCU5">
+					<nom>Théorie de l'apprentissage</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume>
+						<texte>
+							<p>Avancées récentes en théorie de l'apprentissage statistique : complexité de Rademacher, bornes PAC-Bayes, stabilité algorithmique, schémas de compression.</p>
+						</texte>
+					</resume>
+				</unite>
+				<unite id="ENSINCU6">
+					<nom>Inférence grammaticale</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume>
+						<texte>
+							<p>Large panorama des différents algorithmes et résultats obtenus récemment pour l'apprentissage de représentations grammaticales de Langages</p>
+						</texte>
+					</resume>
+				</unite>
+				<unite id="ENSINCU7">
+					<nom>Apprentissage numérique</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume>
+						<texte>
+							<p>Étude de quelques unes des méthodes les plus performantes en apprentissage numérique : les réseaux de neurones, les modèles de Markov cachés et les machines à vecteurs de support.</p>
+						</texte>
+					</resume>
+				</unite>
+				<unite id="ENSINCU19">
+					<nom>Modèles et connaissances linguistiques pour le TAL</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume>
+						<texte>
+							<p>Traitement automatique des langues dans ses aspects applications. Différentes types de connaissances et modèles symboliques sur la langue. Plusieurs ressources linguistiques pour le français sont examinées.</p>
+						</texte>
+					</resume>
+				</unite>
+				<unite id="ENSINCU20">
+					<nom>Syntaxe et sémantique : modèles et outils</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume>
+						<texte>
+							<p>Principes et nature des représentations syntaxiques et sémantiques associables à une phrase. Différents formalismes seront étudiés pour exprimer ces représentations.</p>
+						</texte>
+					</resume>
+				</unite>
+				<unite id="ENSINCU21">
+					<nom>Modèles numériques pour le TAL</nom>
+					<credits>3</credits>
+					<ref_intervenant/>
+					<resume>
+						<texte>
+							<p>Présentation des modèles numériques utilisés pour différentes tâches du Traitement Automatique des Langue. Algorithmes qui permettent d'en estimer les paramètres à partir de données et les algorithmes de décodage.</p>
+						</texte>
+					</resume>
+				</unite>
+			</unites_optionnelles>
+		</semestre>
+		<semestre id="S4">
+			<unites_obligatoires>
+				<unite id="ENSINDU3">
+					<nom>Projet industriel de mise en application</nom>
+					<credits>6</credits>
+					<ref_intervenant/>
+					<resume>
+						<texte>
+							<p>Rédaction du cahier des charges. Conception de l'application. Développement et test. Rédaction d'un mémoire et présentation.</p>
+						</texte>
+					</resume>
+				</unite>
+				<unite id="ENSINDU4">
+					<nom>Stage en entreprise</nom>
+					<credits>24</credits>
+					<ref_intervenant/>
+					<ref_intervenant/>
+					<resume>
+						<texte>
+							<p>Recherche d'un stage. Validation du sujet de stage. Suivi du bon déroulement du stage. Aide à la rédaction du mémoire de stage. Soutenance et évaluation du stage.</p>
+						</texte>
+					</resume>
+				</unite>
+			</unites_obligatoires>
+		</semestre>
+		<debouches>
+			<texte>
+				<p>Cette formation vise à produire des informaticiens spécialistes du traitement des données multimédia et de la recherche d'information qui pourront s'intégrer dans les entreprises innovantes centrées autour des domaines du multimédia et de l'internet.</p>
+			</texte>
+		</debouches>
+	</parcours>
+</master>

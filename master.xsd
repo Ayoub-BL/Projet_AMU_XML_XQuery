@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="master">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="intervenants"/>
+				<xs:element ref="parcours" minOccurs="1" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="intervenants">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="intervenant" minOccurs="1" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="intervenant">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="nom"/>
+				<xs:element name="adresse">
+					<xs:complexType mixed="true">
+						<xs:sequence>
+							<xs:element name="mail" minOccurs="0" maxOccurs="unbounded">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:pattern value="[^@]+@[^\.]+\..+"/> 
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>	
+							<xs:element name="site_web" minOccurs="0" maxOccurs="unbounded" type="xs:anyURI"/>
+						</xs:sequence>	
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="id" use="required" type="xs:ID"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="nom">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:minLength value="3"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="parcours">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="nom"/>
+				<xs:element ref="lieu" minOccurs="1" maxOccurs="unbounded"/>
+				<xs:element ref="responsable" minOccurs="1" maxOccurs="unbounded"/>
+				<xs:element ref="description" minOccurs="0" maxOccurs="1"/>
+				<xs:element ref="semestre" minOccurs="1" maxOccurs="unbounded"/>
+				<xs:element ref="debouches" minOccurs="0" maxOccurs="1"/>
+			</xs:sequence>
+			<xs:attribute name="code" use="required" type="xs:ID"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="responsable">
+        <xs:complexType>
+            <xs:attribute name="ref" use="required" type="xs:IDREF"/>
+        </xs:complexType>
+    </xs:element>
+	<xs:element name="description">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="texte"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+    <xs:element name="semestre">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="unites_obligatoires"/>
+				<xs:element ref="unites_optionnelles" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attribute name="id" use="required" type="enumerationSemestreId"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:simpleType name="enumerationSemestreId">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="S1"/>
+			<xs:enumeration value="S2"/>
+			<xs:enumeration value="S3"/>
+			<xs:enumeration value="S4"/>
+			<xs:enumeration value="S5"/>
+			<xs:enumeration value="S6"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="debouches">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="texte"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="unites_obligatoires">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="unite" minOccurs="1" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+    </xs:element>
+    <xs:element name="unites_optionnelles">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="unite" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attribute name="credits_options">
+				<xs:simpleType>
+					<xs:restriction base="xs:int">
+						<xs:minExclusive value="2"/>
+						<xs:maxExclusive value="31"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>	
+	<xs:element name="unite">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="nom"/>
+				<xs:element ref="credits"/>
+				<xs:element ref="ref_intervenant" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="resume"/>
+				<xs:element ref="plan" minOccurs="0"  maxOccurs="1"/>
+				<xs:element ref="lieu" minOccurs="0"  maxOccurs="1"/>
+			</xs:sequence>
+			<xs:attribute name="id" use="required" type="enumerationUniteId"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:simpleType name="enumerationUniteId">
+		<xs:restriction base="xs:string">
+			<xs:minLength value='1'/>
+			<xs:maxLength value='10'/>
+			<xs:enumeration value="ENSINAU1"/>
+			<xs:enumeration value="ENSINAU10"/>
+			<xs:enumeration value="ENSINAU12"/>
+			<xs:enumeration value="ENSINAU13"/>
+			<xs:enumeration value="ENSINAU2"/>
+			<xs:enumeration value="ENSINAU3"/>
+			<xs:enumeration value="ENSINAU4"/>
+			<xs:enumeration value="ENSINAU6"/>
+			<xs:enumeration value="ENSINAU7"/>
+			<xs:enumeration value="ENSINAU8"/>
+			<xs:enumeration value="ENSINAU9"/>
+			<xs:enumeration value="ENSINBU1"/>
+			<xs:enumeration value="ENSINBU10"/>
+			<xs:enumeration value="ENSINBU11"/>
+			<xs:enumeration value="ENSINBU12"/>
+			<xs:enumeration value="ENSINBU13"/>
+			<xs:enumeration value="ENSINBU15"/>
+			<xs:enumeration value="ENSINBU16"/>
+			<xs:enumeration value="ENSINBU2"/>
+			<xs:enumeration value="ENSINBU4"/>
+			<xs:enumeration value="ENSINBU5"/>
+			<xs:enumeration value="ENSINBU6"/>
+			<xs:enumeration value="ENSINBU7"/>
+			<xs:enumeration value="ENSINBU8"/>
+			<xs:enumeration value="ENSINBU9"/>
+			<xs:enumeration value="ENSINCU1"/>
+			<xs:enumeration value="ENSINCU10"/>
+			<xs:enumeration value="ENSINCU11"/>
+			<xs:enumeration value="ENSINCU12"/>
+			<xs:enumeration value="ENSINCU13"/>
+			<xs:enumeration value="ENSINCU14"/>
+			<xs:enumeration value="ENSINCU15"/>
+			<xs:enumeration value="ENSINCU16"/>
+			<xs:enumeration value="ENSINCU17"/>
+			<xs:enumeration value="ENSINCU18"/>
+			<xs:enumeration value="ENSINCU19"/>
+			<xs:enumeration value="ENSINCU2"/>
+			<xs:enumeration value="ENSINCU20"/>
+			<xs:enumeration value="ENSINCU21"/>
+			<xs:enumeration value="ENSINCU22"/>
+			<xs:enumeration value="ENSINCU23"/>
+			<xs:enumeration value="ENSINCU24"/>
+			<xs:enumeration value="ENSINCU25"/>
+			<xs:enumeration value="ENSINCU26"/>
+			<xs:enumeration value="ENSINCU27"/>
+			<xs:enumeration value="ENSINCU28"/>
+			<xs:enumeration value="ENSINCU29"/>
+			<xs:enumeration value="ENSINCU3"/>
+			<xs:enumeration value="ENSINCU30"/>
+			<xs:enumeration value="ENSINCU31"/>
+			<xs:enumeration value="ENSINCU32"/>
+			<xs:enumeration value="ENSINCU33"/>
+			<xs:enumeration value="ENSINCU34"/>
+			<xs:enumeration value="ENSINCU35"/>
+			<xs:enumeration value="ENSINCU36"/>
+			<xs:enumeration value="ENSINCU37"/>
+			<xs:enumeration value="ENSINCU38"/>
+			<xs:enumeration value="ENSINCU39"/>
+			<xs:enumeration value="ENSINCU4"/>
+			<xs:enumeration value="ENSINCU40"/>
+			<xs:enumeration value="ENSINCU41"/>
+			<xs:enumeration value="ENSINCU42"/>
+			<xs:enumeration value="ENSINCU43"/>
+			<xs:enumeration value="ENSINCU44"/>
+			<xs:enumeration value="ENSINCU45"/>
+			<xs:enumeration value="ENSINCU46"/>
+			<xs:enumeration value="ENSINCU47"/>
+			<xs:enumeration value="ENSINCU48"/>
+			<xs:enumeration value="ENSINCU49"/>
+			<xs:enumeration value="ENSINCU5"/>
+			<xs:enumeration value="ENSINCU50"/>
+			<xs:enumeration value="ENSINCU53"/>
+			<xs:enumeration value="ENSINCU54"/>
+			<xs:enumeration value="ENSINCU56"/>
+			<xs:enumeration value="ENSINCU58"/>
+			<xs:enumeration value="ENSINCU59"/>
+			<xs:enumeration value="ENSINCU6"/>
+			<xs:enumeration value="ENSINCU60"/>
+			<xs:enumeration value="ENSINCU64"/>
+			<xs:enumeration value="ENSINCU65"/>
+			<xs:enumeration value="ENSINCU66"/>
+			<xs:enumeration value="ENSINCU67"/>
+			<xs:enumeration value="ENSINCU68"/>
+			<xs:enumeration value="ENSINCU69"/>
+			<xs:enumeration value="ENSINCU7"/>
+			<xs:enumeration value="ENSINCU72"/>
+			<xs:enumeration value="ENSINCU73"/>
+			<xs:enumeration value="ENSINCU74"/>
+			<xs:enumeration value="ENSINCU75"/>
+			<xs:enumeration value="ENSINCU8"/>
+			<xs:enumeration value="ENSINCU9"/>
+			<xs:enumeration value="ENSINDU1"/>
+			<xs:enumeration value="ENSINDU2"/>
+			<xs:enumeration value="ENSINDU3"/>
+			<xs:enumeration value="ENSINDU4"/>
+			<xs:enumeration value="ENSISCU1"/>
+			<xs:enumeration value="ENSISCU2"/>
+			<xs:enumeration value="ENSISCU20"/>
+			<xs:enumeration value="ENSISCU21"/>
+			<xs:enumeration value="ENSISCU22"/>
+			<xs:enumeration value="ENSISCU23"/>
+			<xs:enumeration value="ENSISCU24"/>
+			<xs:enumeration value="ENSISCU25"/>
+			<xs:enumeration value="ENSISCU26"/>
+			<xs:enumeration value="ENSISCU27"/>
+			<xs:enumeration value="ENSISCU28"/>
+			<xs:enumeration value="ENSISCU29"/>
+			<xs:enumeration value="ENSISCU3"/>
+			<xs:enumeration value="ENSISCU30"/>
+			<xs:enumeration value="ENSISCU31"/>
+			<xs:enumeration value="ENSISCU32"/>
+			<xs:enumeration value="ENSISCU33"/>
+			<xs:enumeration value="ENSISCU34"/>
+			<xs:enumeration value="ENSISCU35"/>
+			<xs:enumeration value="ENSISCU36"/>
+			<xs:enumeration value="ENSISCU37"/>
+			<xs:enumeration value="ENSISCU38"/>
+			<xs:enumeration value="ENSISCU39"/>
+			<xs:enumeration value="ENSISCU4"/>
+			<xs:enumeration value="ENSISCU40"/>
+			<xs:enumeration value="ENSISCU41"/>
+			<xs:enumeration value="ENSISCU42"/>
+			<xs:enumeration value="ENSISCU43"/>
+			<xs:enumeration value="ENSISCU44"/>
+			<xs:enumeration value="ENSISCU45"/>
+			<xs:enumeration value="ENSISCU46"/>
+			<xs:enumeration value="ENSISCU5"/>
+			<xs:enumeration value="ENSISCU55"/>
+			<xs:enumeration value="ENSISCU6"/>
+			<xs:enumeration value="ENSISCU7"/>
+			<xs:enumeration value="ENSISCU8"/>
+			<xs:enumeration value="ENSISDU3"/>
+			<xs:enumeration value="ENSISDU4"/>
+			<xs:enumeration value="ENSINAU12"/>
+			<xs:enumeration value="ENSINAU12"/>
+			<xs:enumeration value="ENSINAU12"/>
+		</xs:restriction>
+	</xs:simpleType>
+    <xs:element name="ref_intervenant">
+        <xs:complexType>
+            <xs:attribute name="ref" use="optional" type="xs:IDREF"/>
+        </xs:complexType>
+    </xs:element>
+	<xs:element name="credits">
+        <xs:simpleType>
+            <xs:restriction base="xs:int">
+                <xs:minExclusive value="2"/>
+				<xs:maxExclusive value="31"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+	<xs:element name="resume">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="texte" minOccurs="0" maxOccurs="1"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+    <xs:element name="plan">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="nbrCours"/>
+				<xs:element ref="nbrTD" minOccurs="0" maxOccurs="1"/>
+				<xs:element ref="nbrTP" minOccurs="0" maxOccurs="1"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="lieu" type="xs:string"/>	
+    <xs:element name="nbrCours" substitutionGroup="substitutionNumber"/>
+    <xs:element name="nbrTD" substitutionGroup="substitutionNumber"/>
+    <xs:element name="nbrTP" substitutionGroup="substitutionNumber"/>
+    <xs:element name="substitutionNumber">
+        <xs:simpleType>
+            <xs:restriction base="xs:int">
+                <xs:minInclusive value='1'/>
+				<xs:maxInclusive value='100'/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+	<xs:element name="texte">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element ref="ul" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="p" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="table" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="a" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="b" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ul">
+		<xs:complexType mixed="true">
+			<xs:sequence>
+				<xs:element ref="li" minOccurs="1" maxOccurs="unbounded"/>
+				<xs:element ref="ul" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="li">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="p">
+		<xs:complexType mixed="true">
+			<xs:sequence>
+				<xs:element ref="b" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="i" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="a" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+    <xs:element name="table">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="th" minOccurs="0" maxOccurs="1"/>
+				<xs:element ref="tr" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="b"  type="xs:string"/>
+    <xs:element name="i"  type="xs:string"/>
+    <xs:element name="a">
+		<xs:complexType>
+			<xs:attribute name="href" use="required" type="xs:string" ></xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="th" type="xs:string"/>
+	<xs:element name="tr">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="td" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="td" type="xs:string"/>
+</xs:schema>

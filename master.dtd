@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT master 				(intervenants,parcours*)>
+
+<!ELEMENT intervenants 			(intervenant+)>
+
+<!ELEMENT intervenant 			(nom,adresse)>
+<!ATTLIST intervenant 			id				ID		#REQUIRED>
+
+<!ELEMENT nom 					(#PCDATA)>
+<!ELEMENT adresse 				(mail | site_web)*>
+<!ELEMENT mail 					(#PCDATA)>
+<!ELEMENT site_web 				(#PCDATA)>
+
+<!ELEMENT parcours 				(nom,lieu+,responsable+,description?,semestre+,debouches?)>
+<!ATTLIST parcours 				code			ID		#REQUIRED>
+
+<!ELEMENT lieu 					(#PCDATA)>
+
+<!ELEMENT responsable 			(#PCDATA)>
+<!ATTLIST responsable 			ref				IDREF	#REQUIRED>
+
+<!ELEMENT description 			(texte)>
+<!ELEMENT semestre 				(unites_obligatoires,unites_optionnelles*)>
+<!ATTLIST semestre 				id 				(S1 | S2 | S3 | S4 | S5 | S6) 		#REQUIRED>
+
+<!ELEMENT debouches 			(texte)>
+
+<!ELEMENT texte 				(#PCDATA | ul | p | table | a | b)*>
+<!ELEMENT ul 					(li+,ul*)>
+<!ELEMENT li 					(#PCDATA)>
+<!ELEMENT p 					(#PCDATA | b | i | a)*>
+<!ELEMENT table 				(th*, tr*)>
+<!ELEMENT th					(#PCDATA)>
+<!ELEMENT tr 					(td*)>
+<!ELEMENT td 					(#PCDATA)>
+<!ELEMENT b 					(#PCDATA)>
+<!ELEMENT i 					(#PCDATA)>
+<!ELEMENT a 					ANY>
+<!ATTLIST a  					href			CDATA	#REQUIRED>
+
+<!ELEMENT unites_obligatoires 	(unite+)>
+
+<!ELEMENT unites_optionnelles 	(unite+)>
+<!ATTLIST unites_optionnelles 	credits_options	CDATA	#REQUIRED>
+
+<!ELEMENT unite 				(nom,credits,ref_intervenant+,resume,plan?,lieu?)>
+<!ATTLIST unite					id 				(ENSINAU1 | ENSINAU10 | ENSINAU12 | ENSINAU13 | ENSINAU2 | ENSINAU3 | ENSINAU4 | ENSINAU6 | ENSINAU7 | ENSINAU8 | ENSINAU9 | ENSINBU1 | ENSINBU10 | ENSINBU11 | ENSINBU12 | ENSINBU13 | ENSINBU15 | ENSINBU16 | ENSINBU2 | ENSINBU4 | ENSINBU5 | ENSINBU6 | ENSINBU7 | ENSINBU8 | ENSINBU9 | ENSINCU1 | ENSINCU10 | ENSINCU11 | ENSINCU12 | ENSINCU13 | ENSINCU14 | ENSINCU15 | ENSINCU16 | ENSINCU17 | ENSINCU18 | ENSINCU19 | ENSINCU2 | ENSINCU20 | ENSINCU21 | ENSINCU22 | ENSINCU23 | ENSINCU24 | ENSINCU25 | ENSINCU26 | ENSINCU27 | ENSINCU28 | ENSINCU29 | ENSINCU3 | ENSINCU30 | ENSINCU31 | ENSINCU32 | ENSINCU33 | ENSINCU34 | ENSINCU35 | ENSINCU36 | ENSINCU37 | ENSINCU38 | ENSINCU39 | ENSINCU4 | ENSINCU40 | ENSINCU41 | ENSINCU42 | ENSINCU43 | ENSINCU44 | ENSINCU45 | ENSINCU46 | ENSINCU47 | ENSINCU48 | ENSINCU49 | ENSINCU5 | ENSINCU50 | ENSINCU53 | ENSINCU54 | ENSINCU56 | ENSINCU58 | ENSINCU59 | ENSINCU6 | ENSINCU60 | ENSINCU64 | ENSINCU65 | ENSINCU66 | ENSINCU67 | ENSINCU68 | ENSINCU69 | ENSINCU7 | ENSINCU72 | ENSINCU73 | ENSINCU74 | ENSINCU75 | ENSINCU8 | ENSINCU9 | ENSINDU1 | ENSINDU2 | ENSINDU3 | ENSINDU4 | ENSISCU1 | ENSISCU2 | ENSISCU20 | ENSISCU21 | ENSISCU22 | ENSISCU23 | ENSISCU24 | ENSISCU25 | ENSISCU26 | ENSISCU27 | ENSISCU28 | ENSISCU29 | ENSISCU3 | ENSISCU30 | ENSISCU31 | ENSISCU32 | ENSISCU33 | ENSISCU34 | ENSISCU35 | ENSISCU36 | ENSISCU37 | ENSISCU38 | ENSISCU39 | ENSISCU4 | ENSISCU40 | ENSISCU41 | ENSISCU42 | ENSISCU43 | ENSISCU44 | ENSISCU45 | ENSISCU46 | ENSISCU5 | ENSISCU55 | ENSISCU6 | ENSISCU7 | ENSISCU8 | ENSISDU3 | ENSISDU4)	  #REQUIRED>
+
+<!ELEMENT ref_intervenant 		ANY>
+<!ATTLIST ref_intervenant 		ref				IDREF	#IMPLIED>
+
+<!ELEMENT credits 				(#PCDATA)>
+<!ELEMENT resume 				(texte)?>
+<!ELEMENT plan 					(nbrCours,nbrTD?,nbrTP?)>
+
+<!ELEMENT nbrCours 				(#PCDATA)>
+<!ELEMENT nbrTD 				(#PCDATA)>
+<!ELEMENT nbrTP 				(#PCDATA)>

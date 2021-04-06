@@ -1,0 +1,229 @@
+/* Style inspired from MR.Jean-Luc MASSAT on the university website:  http://jean-luc.massat.perso.luminy.univ-amu.fr */
+html {
+	height : 101%;
+}
+body {
+	background-image: url(../img/fond.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	margin : 0px;
+	padding : 0px;
+}
+footer {
+	/* border: 2px dashed red; */
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #f4e1d2;
+	font-size: 12pt;
+	border-top: solid 3px #50394c;
+}
+#allPage {
+	position: relative;
+    width: 940px;
+	min-height: 100%;
+	margin: 0 auto; 
+	border-left: solid 3px #50394c;
+	border-right: solid 3px #50394c;
+	background-image: url(../img/marge-paille.gif);
+	background-repeat: repeat-y;
+}
+a.header-univmed {
+	display:block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+    width: 270px;
+    height: 84px;
+	background-image: url(../img/logo-sciences.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: white;
+}
+a.header-masterinfo {
+	display:block;
+	position: absolute;
+	left: 275px;
+	right: 275px;
+    height: 84px;
+	background-image: url(../img/header-masterinfo.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: white;
+}
+a.header-univprov {
+	display:block;
+	position: absolute;
+	right: 0px;
+    height: 84px;
+    width: 270px;
+	background-image: url(../img/AMU.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: white;
+}
+#header {
+    position: relative;
+    height: 86px;
+    top: 0px;
+    left: 0px;
+	width: 100%;
+	border-bottom: solid 3px #50394c;
+	background-color: white;
+}
+#leftFrame {
+    position: absolute;
+    left: 15px;
+    top: 200px;
+    width: 160px;
+	background-color: transparent;
+}
+#content {
+	position: relative;
+	left: 180px;
+	width: 750px;
+	padding-top: 30px;
+	padding-bottom: 100px;
+}
+div#menu {
+	width: 140px;
+	border : solid 3px #50394c;
+}
+a.menu-normal, a.menu-active {
+	margin: 0;
+	display: block;
+	text-decoration: none;
+	text-align: left;
+	color: black;
+	border-bottom: 1px solid #EC9E00;
+	padding: 2px 0px 2px 0px;
+	width: 140px;
+}
+div#menu a.menu-normal:hover {
+	background-color: #f4e1d2;
+	color: #000000;
+}
+div#menu a.menu-active {
+	background-color:#f4e1d2;
+}
+div#menu a.menu-normal {
+	background-color: #50394c;
+	color: #ffff;
+}
+div#menu a.menu1 span {
+	font-size: 10pt;
+	padding: 0px 0px 0px 5px;
+	display: block;
+	text-align: left;
+	font-weight:	bold;
+}
+div#menu a.menu2 span {
+	font-size: 8pt;
+	padding: 0px 0px 0px 15px;
+	display: block;
+	text-align: left;
+}
+div#menu a.menu3 span {
+	font-size: 8pt;
+	padding: 0px 0px 0px 25px;
+	display: block;
+	text-align: left;
+	font-style: italic;
+}
+p,ul,dl,ol,td,dt,dd,li,th,h4,h2,h3,h4,h5,div,input,textarea,select {
+	font-family: Arial, sans-serif;
+	font-size: 10pt;
+}
+tt {
+	font-family:Courier, monospace;
+	font-size: 10pt;
+}
+dt { font-weight: bold; }
+table {
+	background-color: #f4e1d2;
+	margin-top: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	border-spacing: 2px;
+	border : solid 2px #50394c;
+}
+th {
+	background-color:#50394c;
+	color: #ffff;
+	padding: 3px;
+	border: 0px;
+}
+tr:nth-child(even) {
+	background-color: #fefbd8;
+}
+h1 {
+	font-family:Arial,sans-serif;
+	font-size: large;
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 30px;
+}
+h2, .h2 {
+	margin-top:1cm;
+	width: 100%;
+	text-align: left;
+	font-weight: bold;
+	background-color:#50394c;
+	color: #ffff;
+	padding-left: 4px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	border-left: solid 2px #EC9E00;
+	border-bottom: solid 2px #EC9E00;
+	clear: left;
+}
+h2, h3, h4, h5, h6 {
+	/* pour IE : les titres ne bloquent pas les float */
+	clear : left;
+}
+input, textarea, select {
+	border: solid 1px #EC9E00;
+	padding: 2px;
+	background-color: #FFF7C4; /* color0 */
+}
+img.center {
+	display:block;
+	margin: 5px;
+	margin-left:auto;
+	margin-right:auto
+}
+img.left { margin: 5px; float:left }
+img.right { margin: 5px; float:right }
+.cadre { 
+	border-color:   #b8a9c9;
+	border-style:   solid;
+	border-width:   2px;
+	vertical-align: bottom;
+	padding:        4px;
+	float: right;
+	width: 45%;
+	margin: 5px;
+}
+legend {
+	background-color: #ffff;
+	border-color:#50394c;
+	border-style : solid;
+	border-width: 2px;
+	vertical-align: bottom;
+	padding: 2px 5px 2px 5px;
+}
+fieldset {
+	border-color:   #50394c;
+	border-style:   solid;
+	border-width:   2px;
+	vertical-align: bottom;
+	padding:        4px;
+	float: right;
+	width: 45%;
+	margin: 5px;
+}
+a { text-decoration:underline; color: black; }
+a:visited { color: black; }
+a:link { color: black; }
+a:hover { color:#ff5230; }
+a:active { color:#ffff; }

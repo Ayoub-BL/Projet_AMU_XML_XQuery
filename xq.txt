@@ -1,0 +1,36 @@
+declare option saxon:output "encoding=utf-8";
+declare option saxon:output "doctype-system=http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd";
+declare option saxon:output "doctype-public=http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd";
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>AMU | XQuery</title>
+        <link rel="stylesheet" href="css/style4XQuery.css" />
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th>Enseignant</th>
+                <th>Enseignements qu'il assure avec parcours</th>
+            </tr>
+                {for $intervenant in doc("master.xml")/master/intervenants/intervenant order by $intervenant/nom return
+                    <tr>
+        			    <td>{data($intervenant/nom)}</td>
+            			<td>
+                            {for $unite in doc("master.xml")//unite where $intervenant/@id=$unite/ref_intervenant/@ref return
+                                <ul>
+                                    <li>{data($unite/nom)} : parcours (
+                                                                        {for $parcours in doc("master.xml")//parcours where ($unite/../../../nom=$parcours/nom) return
+                                                                        data($parcours/nom)}
+                                                                        - {for $parcours in doc("master.xml")//parcours where ($unite/../../../nom=$parcours/nom) return
+                                                                        data($parcours/@code)}
+                                                                    )
+                                    </li>
+                                </ul>
+                            }
+            			</td>
+            		</tr>
+                }
+        </table>
+    </body>
+</html>
